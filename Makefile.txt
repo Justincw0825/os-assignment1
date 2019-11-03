@@ -1,0 +1,10 @@
+prod:prod.o
+	gcc -Wall -g prod.o -o prod -lpthread -lm;
+cons:cons.o
+	gcc -Wall -g cons.o -o cons -lpthread -lm;
+dph:dph.o
+	gcc -Wall -g dph.o -o dph -lpthread;
+mycall:mycall.c
+	gcc -g -o mycall mycall.c -lpthread;
+clean:
+	rm -f *.o main;
